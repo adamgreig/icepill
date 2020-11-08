@@ -8,4 +8,5 @@
   (lib (name power)(type Legacy)(uri ${KIPRJMOD}/libs/power.lib)(options "")(descr ""))
   (lib (name led)(type Legacy)(uri ${KIPRJMOD}/libs/led.lib)(options "")(descr ""))
   (lib (name mcp1700)(type Legacy)(uri ${KIPRJMOD}/libs/mcp1700.lib)(options "")(descr ""))
+  (lib (name pwr)(type Legacy)(uri ${KIPRJMOD}/libs/pwr.lib)(options "")(descr ""))
 )
