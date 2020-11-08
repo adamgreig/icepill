@@ -479,8 +479,6 @@ Wire Wire Line
 Wire Wire Line
 	3200 4550 3300 4550
 Wire Wire Line
-	3300 4850 3200 4850
-Wire Wire Line
 	3300 5050 3200 5050
 Text Label 3200 5050 2    50   ~ 0
 C_SO
@@ -494,8 +492,8 @@ Wire Wire Line
 	3300 5350 3200 5350
 Text Label 3200 5350 2    50   ~ 0
 C_SI
-Text Notes 5750 6450 0    50   ~ 0
-Pin 35 is a PLL input, and cannot be used\nas a normal input if the PLL is otherwise used.
+Text Notes 5450 6500 0    50   ~ 0
+Pin 35 can be used as a PLL input.\nIf the PLL is enabled, pin 35 cannot\nbe used as anything except a PLL input.
 Text Label 3500 1200 0    50   ~ 0
 C_SO
 Text Label 3500 1100 0    50   ~ 0
@@ -845,10 +843,6 @@ Wire Wire Line
 Wire Wire Line
 	4600 2400 4700 2400
 Wire Wire Line
-	4700 2600 4600 2600
-Wire Wire Line
-	4600 2700 4700 2700
-Wire Wire Line
 	4700 2800 4600 2800
 Wire Wire Line
 	3700 1700 3800 1700
@@ -858,8 +852,6 @@ Wire Wire Line
 	3700 1900 3800 1900
 Wire Wire Line
 	3700 2000 3800 2000
-Wire Wire Line
-	3700 2100 3800 2100
 Wire Wire Line
 	3700 2200 3800 2200
 Wire Wire Line
@@ -1005,11 +997,11 @@ Text Label 3700 1700 2    50   ~ 0
 P1_2
 Text Label 3700 1600 2    50   ~ 0
 P1_3
-Text Label 3700 1500 2    50   ~ 0
+Text Label 3250 1500 2    50   ~ 0
 P1_4
 Text Label 3700 2200 2    50   ~ 0
 P2_1
-Text Label 3700 2100 2    50   ~ 0
+Text Label 3250 2100 2    50   ~ 0
 P2_2
 Text Label 3700 2000 2    50   ~ 0
 P2_3
@@ -1059,13 +1051,9 @@ Text Label 4700 2300 0    50   ~ 0
 P4_1
 Text Label 4700 2400 0    50   ~ 0
 P4_2
-Text Label 4700 2600 0    50   ~ 0
-P4_3
-Text Label 4700 2700 0    50   ~ 0
-P4_4
 Text Label 4700 2800 0    50   ~ 0
 P7_7
-Text Label 5200 4650 0    50   ~ 0
+Text Label 5700 4650 0    50   ~ 0
 P1_4
 Text Label 5200 4750 0    50   ~ 0
 P1_3
@@ -1073,7 +1061,7 @@ Text Label 5200 5150 0    50   ~ 0
 P2_4
 Text Label 5200 5250 0    50   ~ 0
 P2_3
-Text Label 5200 5350 0    50   ~ 0
+Text Label 5700 5350 0    50   ~ 0
 P2_2
 Text Label 5200 5450 0    50   ~ 0
 P2_1
@@ -1082,10 +1070,6 @@ P1_2
 Text Label 5200 4950 0    50   ~ 0
 P1_1
 Wire Wire Line
-	5100 4650 5200 4650
-Wire Wire Line
-	5100 4750 5200 4750
-Wire Wire Line
 	5100 4850 5200 4850
 Wire Wire Line
 	5100 4950 5200 4950
@@ -1093,8 +1077,6 @@ Wire Wire Line
 	5100 5150 5200 5150
 Wire Wire Line
 	5100 5250 5200 5250
-Wire Wire Line
-	5100 5350 5200 5350
 Wire Wire Line
 	5100 5450 5200 5450
 Wire Wire Line
@@ -1202,41 +1184,35 @@ Wire Wire Line
 $Comp
 L r:R R3
 U 1 1 6028036E
-P 3300 1600
-F 0 "R3" H 3350 1650 50  0000 C CNN
-F 1 "0" H 3350 1550 50  0000 C CNN
-F 2 "icepill:0603" H 3300 1600 50  0001 C CNN
-F 3 "" H 3300 1600 50  0001 C CNN
-	1    3300 1600
+P 5500 4650
+F 0 "R3" H 5550 4700 50  0000 C CNN
+F 1 "0" H 5550 4600 50  0000 C CNN
+F 2 "icepill:0603" H 5500 4650 50  0001 C CNN
+F 3 "" H 5500 4650 50  0001 C CNN
+	1    5500 4650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3400 1600 3800 1600
-Text Label 3050 1600 2    50   ~ 0
+Text Label 5200 4650 0    50   ~ 0
 F_~IRQ
 Wire Wire Line
-	3050 1600 3300 1600
+	3250 1500 3350 1500
 Wire Wire Line
 	3450 1400 3800 1400
 $Comp
 L r:R R2
 U 1 1 60296195
-P 3150 1500
-F 0 "R2" H 3200 1550 50  0000 C CNN
-F 1 "0" H 3200 1450 50  0000 C CNN
-F 2 "icepill:0603" H 3150 1500 50  0001 C CNN
-F 3 "" H 3150 1500 50  0001 C CNN
-	1    3150 1500
+P 5500 5350
+F 0 "R2" H 5550 5400 50  0000 C CNN
+F 1 "0" H 5550 5300 50  0000 C CNN
+F 2 "icepill:0603" H 5500 5350 50  0001 C CNN
+F 3 "" H 5500 5350 50  0001 C CNN
+	1    5500 5350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3250 1500 3800 1500
-Text Label 3050 1500 2    50   ~ 0
+Text Label 5200 5350 0    50   ~ 0
 F_CLK
-Wire Wire Line
-	3050 1500 3150 1500
-Text Notes 2700 1650 2    50   ~ 0
-F_CLK (PA8) and P1_4 (PA9), and\nF_~IRQ~ (PB10) and P1_3 (PA10)\nare connected by default but may\nbe isolated by removing the 0R jumper.\nConnection is required to feed clock\ninto iCE40 or receive IRQ from iCE40.
+Text Notes 3100 1950 2    50   ~ 0
+R7 and R8 allow connecting\nPA9 and PB4 to the PMOD pins,\nwhich by default are used for\nF_~IRQ~ and F_CLK.
 Wire Wire Line
 	3200 5550 3200 5600
 $Comp
@@ -1284,7 +1260,7 @@ Connection ~ 3200 5600
 Wire Wire Line
 	3200 5600 3200 5650
 Text Notes 1900 6100 0    50   ~ 0
-LED on both RGB0 and RGB1\nfor routing reasons; do not drive\n48mA through the LED!
+LED on both RGB0 and RGB1\nfor routing reasons; only use\none at a time.
 Wire Wire Line
 	3300 5550 3200 5550
 Wire Wire Line
@@ -1488,4 +1464,52 @@ Wire Wire Line
 Connection ~ 1200 2450
 Wire Wire Line
 	1200 2450 1200 2600
+Wire Wire Line
+	3200 4850 3300 4850
+NoConn ~ 4600 2600
+NoConn ~ 4600 2700
+Text Notes 4700 2650 0    50   ~ 0
+PC14/15 are NC as they have a\n32kHz crystal fitted on the Black Pill.
+$Comp
+L r:R R8
+U 1 1 5FB79896
+P 3350 2100
+F 0 "R8" H 3400 2150 50  0000 C CNN
+F 1 "DNF" H 3400 2050 50  0000 C CNN
+F 2 "icepill:0603" H 3350 2100 50  0001 C CNN
+F 3 "" H 3350 2100 50  0001 C CNN
+	1    3350 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 2100 3350 2100
+Wire Wire Line
+	3450 2100 3800 2100
+$Comp
+L r:R R7
+U 1 1 5FC0CF5E
+P 3350 1500
+F 0 "R7" H 3400 1550 50  0000 C CNN
+F 1 "DNF" H 3400 1450 50  0000 C CNN
+F 2 "icepill:0603" H 3350 1500 50  0001 C CNN
+F 3 "" H 3350 1500 50  0001 C CNN
+	1    3350 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 5350 5500 5350
+Wire Wire Line
+	5700 5350 5600 5350
+Text Notes 5450 5200 0    50   ~ 0
+R2 and R3 connect F_~IRQ~\nand F_CLK to the PMOD pins,\nbut can be removed to use\nSTM32 PA10 and PB4 instead.
+Wire Wire Line
+	5200 4750 5100 4750
+Wire Wire Line
+	5700 4650 5600 4650
+Wire Wire Line
+	5100 4650 5500 4650
+Wire Wire Line
+	3700 1600 3800 1600
+Wire Wire Line
+	3450 1500 3800 1500
 $EndSCHEMATC
