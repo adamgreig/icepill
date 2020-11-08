@@ -9,7 +9,7 @@ Date "2020-11-07"
 Rev "1"
 Comp ""
 Comment1 "Drawn by: AG"
-Comment2 ""
+Comment2 "License: CC0"
 Comment3 ""
 Comment4 ""
 $EndDescr
