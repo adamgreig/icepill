@@ -8,7 +8,7 @@ This board connects all iCE40UP5k pins to all the STM32 pins, and exposes
 an additional double PMOD. Alternatively, the iCE40UP5K can be connected
 using J8 and J9 to just provide power and configuration.
 
-R2 and R3 are used to connect the MCO (PA8) and IRQ (PB0) lines to two
+R2 and R3 are used to connect the MCO (PA8) and IRQ (PB10) lines to two
 signals in PMOD 1 and thereby to the iCE40UP5k. By default these are connected
 but if you don't require clock or interrupts or if you need to use these STM32
 pins, you can remove R2 and R3 to break the connection.
