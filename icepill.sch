@@ -1052,7 +1052,7 @@ P4_1
 Text Label 4700 2400 0    50   ~ 0
 P4_2
 Text Label 4700 2800 0    50   ~ 0
-P7_7
+P4_4
 Text Label 5700 4650 0    50   ~ 0
 P1_4
 Text Label 5200 4750 0    50   ~ 0
